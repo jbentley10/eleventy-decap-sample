@@ -5,10 +5,10 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
+    --primary: #26ab0b;
+    --primaryLight: #41ad37;
+    --secondary: #d5c52f;
+    --secondaryLight: #d5c52f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -374,6 +374,7 @@
     left: auto;
     right: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scaleX(0);
     background-color: #fff;
     height: 100vh;
@@ -479,6 +480,7 @@
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
+    visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
@@ -538,7 +540,7 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     cursor: pointer;
     appearance: none;
   }
